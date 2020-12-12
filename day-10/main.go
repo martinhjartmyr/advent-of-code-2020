@@ -40,7 +40,7 @@ func main() {
 			log.Println("should not exist according to the rules")
 		}
 
-		// Accumilate existing combinatinos forward
+		// Accumulate existing combinations forward
 		for x := -3; x <= -1; x++ {
 			combiCount[data[i]] += combiCount[data[i]+x]
 		}
